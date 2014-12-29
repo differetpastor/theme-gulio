@@ -9,6 +9,7 @@
       {% elif post %}{{ post.title }}
       {% endif %}
       | {{ site.name }}
+
     </title>
    
     {{ header_meta }}
@@ -16,6 +17,7 @@
     <link href="{{ assets('css/style.css') }}" rel="stylesheet" />
 
     <script>
+
     (function(doc, script) {
       var js,fjs=doc.getElementsByTagName(script)[0],frag=doc.createDocumentFragment(),add=function(url,id){if(doc.getElementById(id)){return;}js=doc.createElement(script);js.src=url;id&&(js.id=id);frag.appendChild(js);};
   // Google+ button
@@ -33,6 +35,7 @@
 
     {% if site.analytics %}
     <script>
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '{{ site.analytics }}']);
     _gaq.push(['_trackPageview']);
